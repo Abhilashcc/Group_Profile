@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Group Profile Page Design</title>
+    <meta name="author" content="YourName" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+    <style>
+       body {
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+
+        .profile_img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff; /* White border */
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Light shadow */
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none; /* No border */
+            background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Gradient background */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1); /* Light shadow */
+            overflow: hidden; /* Hide overflow */
+        }
+        .card-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-header h3 {
+            margin-bottom: 10px;
+            
+        }
+        .card-body {
+            padding: 20px;
+           
+        }
+        .pers-info { 
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            border: 1px solid #ddd; /* Border for location section */
+        }
+        .table th, .table td {
+            vertical-align: middle;
+            border-top: none; /* No border */
+        }
+        .media-section {
+            margin-top: 20px;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            border: 1px solid #ddd; /* Border for location section */
+        }
+        .social-links a {
+            color: #007bff; /* Social links color */
+            text-decoration: none;
+            margin-right: 10px;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .social-links a:hover {
+            color: #0056b3; /* Hover color */
+        }
+        #educational-background, #hobbies-list, #youtube-video, #video-container, #audio-container {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            border: 1px solid #ddd; /* Border for location section */
+
+        }
+         #educational-background h4, #hobbies-list h4 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        #media-section,#youtube-video, #video-container, #audio-container {
+            margin-top: 20px;
+        }
+        .header-container {
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a); /* Blue gradient background */
+            padding: 30px; /* Padding for better spacing */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1); /* Light shadow */
+            text-align: center; /* Center text */
+            margin-bottom: 30px; /* Space below header */
+        }
+        .header-container h1 {
+            color: #fff; /* White text color */
+            font-size: 3em; /* Larger font size */
+            margin: 0; /* No margin */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Text shadow for depth */
+        }
+    </style>
+    
+    
+</head>
+<body>
+		
+<div class="container">
+    <header class="text-center my-4">
+        <h1><b>TITANS</b></h1>
+
+        <p> We are students at <abbr title="The Kyoto College of Graduate Studies for Informatics">KCGI</abbr>, pursuing masters in Information Technology and concentration in Data Science</p>
+        
+    </header>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-transparent text-center">
+                    <img class="profile_img" src= "img\abhilashcc.jpg"alt="John Doe">
+                    <h3>CHENICHERI CHERUVARAKKIL ABHILASH</h3>
+                </div>
+                <div class="card-body">
+                
+                  <div class="pers-info">
+                    <p class="mb-0"><strong class="pr-1">Short Name:</strong>Abhilash</p>
+                    <p class="mb-0"><strong class="pr-1">Date of Birth:</strong>19/10/1998</p>
+                    <p class="mb-0"><strong class="pr-1">Country:</strong>India</p>
+                    <p class="mb-0"><strong class="pr-1">Qualification:</strong>Bachelors Degree in Mechanical Engineering</p>
+                    <p class="mb-0"><strong class="pr-1">Email:</strong><a href= "mailto: ccabhilash20@gmail.com">ccabhilash20@gmail.com </a></p>
+                    <p class="mb-0"><strong class="pr-1">Location:</strong>93-1 Nishi-shichijo Minamitsukiyomi-cho, Shimogyo-ku, Kyoto-shi, Kyoto Prefecture</p>
+                  </div>  
+                    <div class="media-section">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.29474970516443!2d135.73014177424085!3d34.988781290060025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600106412f8b9759%3A0x87932b5c7a0d4db4!2z44CSNjAwLTg4ODUgS3lvdG8sIFNoaW1vZ3lvIFdhcmQsIE5pc2hpc2hpY2hpasWNIE1pbmFtaXRzdWtpeW9taWNoxY0sIDkzLTEg6LKe6YeR44OT44Or!5e0!3m2!1sen!2sjp!4v1715841079205!5m2!1sen!2sjp" width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>  
+                    <div id="educational-background">
+                        <h4>Educational Background</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Degree</th>
+                                    <th>Year</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bachelors</td>
+                                    <td>2018-2022</td>
+                                    <td>Kerala technological University</td>
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="hobbies-list">
+                        <h4>Hobbies</h4>
+                        <ul>
+                            <li>Football</li>
+                            <li>Swimming</li>
+                            <li>Traveling</li>
+                           
+                        </ul>
+                    </div>
+                    <div id="youtube-video">
+                        <iframe width="260" height="315" src="https://www.youtube.com/embed/IGjE_zgs2Hw?si=eIbWTKmbP4s9uXzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                    <div id="video-container">
+                        <video controls width="260" height="300">
+                            <source src="video\Dover sole 🐟 (Dil balığı ) fish food seafood.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id="audio-container" style="width: 300px;">
+                        <audio controls style="width: 100%;">
+                            <source src= "Audio\small-room-clapping-2-198077.mp3"type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    
+                    <p class="mb-0"><strong class="pr-1">Connect with me:</strong></p>   
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/abhilash_c_c?igsh=MWhmOTlrYjFqOXBmbg==" target="_blank">
+                            <i class="fab fa-instagram"></i>Instagram
+                        </a>
+                        <a href="https://github.com/Abhilashcc" target="_blank">
+                            <i class="fab fa-github"></i>Github
+                            </a>
+                    </div>  
+                </div>
+                </div>
+            </div>
+        
+        <div class="col-lg-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-transparent text-center">
+                    <img class="profile_img" src="img\ashik.jpg" alt="madatthil koliyat ashik suresh">
+                    <h3>MADATHIL KOLIYAT ASHIK SURESH</h3>
+                </div>
+                <div class="card-body">
+                  <div class="pers-info">
+                    <p class="mb-0"><strong class="pr-1">Short Name:</strong>Ashik</p>
+                    <p class="mb-0"><strong class="pr-1">Date of Birth:</strong>03/02/2001</p>
+                    <p class="mb-0"><strong class="pr-1">Country:</strong>India</p>
+                    <p class="mb-0"><strong class="pr-1">Qualification:</strong>Bachelors Degree in Computer Science Engineering</p>
+                    <p class="mb-0"><strong class="pr-1">Email:</strong><a href= "mailto: ashiksureshmk@gmail.com">ashiksureshmk@gmail.com </a></p>
+                    <p class="mb-0"><strong class="pr-1">Location:</strong>363 Ichijo-dori Senbon Nishiiri Karasuma-cho, Kamigyo-ku, Kyoto-shi, Kyoto 602-8332</p>
+                </div>
+                       <div class="media-section">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13069.115593518422!2d135.7425602!3d35.0247521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600107c2b5c9fd1f%3A0x391b682f40d27cd1!2sSenbon%20Nakadachiuri!5e0!3m2!1sen!2sjp!4v1716124823793!5m2!1sen!2sjp" width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                       <div id="educational-background">
+                        <h4>Educational Background</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Degree</th>
+                                    <th>Year</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bachelors</td>
+                                    <td>2019-2023</td>
+                                    <td>Kerala technological university</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="hobbies-list">
+                        <h4>Hobbies</h4>
+                        <ul>
+                            <li>Coding</li>
+                            <li>Cricket</li>
+                            <li>Traveling</li>
+                            
+                        </ul>
+                    </div>
+                    <div id="youtube-video">
+                        <iframe width="260" height="315" src="https://www.youtube.com/embed/R0alThHNb0Y?si=gH_d8UjlNsvF1O95&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                        <div id="video-container">
+                        <video controls width="260" height="300">
+                            <source src= "video\20315562-hd_1920_1080_30fps.mp4"type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id="audio-container" style="width: 300px;">
+                        <audio controls style="width: 100%;">
+                            <source src= "Audio\small-mountain-waterfall_nature-sound-203003.mp3"type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    
+                    
+                       <p class="mb-0"><strong class="pr-1">Connect with me:</strong></p> 
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/ashik_suresh_nambiar?igsh=Y3dtZWNxN2VuMXp4&utm_source=qr" target="_blank">
+                                <i class="fab fa-instagram"></i>Instagram
+                            </a>
+                            <a href="https://github.com/Ashik-Suresh-M-K" target="_blank">
+                                <i class="fab fa-github"></i>Github
+                                </a>
+                        </div>
+                </div>
+            </div>    
+        </div>
+        <div class="col-lg-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-transparent text-center">
+                    <img class="profile_img" src="img\navneeth.jpg" alt="vipin navaneeth">
+                    <h3>VIPIN NAVANEETH</h3>
+                </div>
+                <div class="card-body">
+                  <div class="pers-info">
+                    <p class="mb-0"><strong class="pr-1">Short Name:</strong>Navaneeth</p>
+                    <p class="mb-0"><strong class="pr-1">Date of Birth:</strong>07/03/2001</p>
+                    <p class="mb-0"><strong class="pr-1">Country:</strong>India</p>
+                    <p class="mb-0"><strong class="pr-1">Qualification:</strong>Bachelors Degree in Computer Science Engineering</p>
+                    <p class="mb-0"><strong class="pr-1">Email:</strong><a href= "mailto: navaneethvipin007@gmail.com">navaneethvipin007@gmail.com </a></p>
+                    <p class="mb-0"><strong class="pr-1">Location:</strong>363 Ichijo-dori Senbon Nishiiri Karasuma-cho, Kamigyo-ku, Kyoto-shi, Kyoto 602-8332</p>
+                </div>  
+                    <div class="media-section">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13069.115593518422!2d135.7425602!3d35.0247521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600107c2b5c9fd1f%3A0x391b682f40d27cd1!2sSenbon%20Nakadachiuri!5e0!3m2!1sen!2sjp!4v1716124823793!5m2!1sen!2sjp" width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                       <div id="educational-background">
+                        <h4>Educational Background</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Degree</th>
+                                    <th>Year</th>
+                                    <th>University</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bachelors</td>
+                                    <td>2019-2023</td>
+                                    <td>Kerala technological university</td>
+                                </tr>
+                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="hobbies-list">
+                        <h4>Hobbies</h4>
+                        <ul>
+                            <li>Swimming</li>
+                            <li>Volleyball</li>
+                            <li>fishing</li>
+                           
+                        </ul>
+                    </div>
+                    <div id="youtube-video">
+                        <iframe width="260" height="315" src="https://www.youtube.com/embed/ztK_7KVnze0?si=O8r8FmdGO0cEsw1Q&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                    <div id="video-container">
+                        <video controls width="260" height="315">
+                            <source src= "video\fein.mp4"type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id="audio-container" style="width: 300px;">
+                        <audio controls style="width: 100%;">
+                            <source src= "Audio\sura.mp3"type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    
+                       <p class="mb-0"><strong class="pr-1">Connect with me:</strong></p> 
+                       <div class="social-links">
+                            <a href="https://www.instagram.com/navanee_th?igsh=MTJicTF0NWhsOGY5NA%3D%3D&utm_source=qr "margin-right: 5px>
+                                <i class="fab fa-instagram"></i>Instagram
+                            </a>
+                            <a href=https://github.com/navaneethvipin/web-programming-1>
+                                <i class="fab fa-github"></i>Github
+                                </a>
+                        </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
